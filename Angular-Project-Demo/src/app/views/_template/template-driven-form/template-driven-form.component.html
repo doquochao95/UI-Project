@@ -1,0 +1,20 @@
+<p>template-driven-form works!</p>
+<form (ngSubmit)="submitData()">
+  <div>
+    <label for="firstname">First Name : </label>
+    <input
+      name="firstname"
+      type="text"
+      [(ngModel)]="name.firstname"
+    />
+  </div>
+  <div>
+    <label for="lastname">Last Name : </label>
+    <input
+      name="lastname"
+      type="text"
+      [(ngModel)]="name.lastname"
+    />
+  </div>
+  <button>Submit</button>
+</form>

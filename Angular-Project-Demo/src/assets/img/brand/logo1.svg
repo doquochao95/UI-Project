@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW X8 -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="600px" height="600px" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 600 600"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <font id="FontID0" horiz-adv-x="585" font-variant="normal" style="fill-rule:nonzero" font-style="normal" font-weight="600">
+	<font-face 
+		font-family="Fira Sans SemiBold">
+		<font-face-src>
+			<font-face-name name="Fira Sans SemiBold"/>
+		</font-face-src>
+	</font-face>
+   <missing-glyph><path d="M0 0z"/></missing-glyph>
+   <glyph unicode="U" horiz-adv-x="654" d="M590 692l-146.999 0 0 -457c0,-93 -36,-139 -117,-139 -80.0002,0 -116,45.9998 -116,139l0 457 -147 0 0 -464c0,-144 87.9998,-244 263,-244 175,0 263.999,105 263.999,244l0 464z"/>
+   <glyph unicode="I" horiz-adv-x="294" d="M220 692l-147 0 0 -692 147 0 0 692z"/>
+  </font>
+  <style type="text/css">
+   <![CDATA[
+    @font-face { font-family:"Fira Sans SemiBold";font-variant:normal;font-style:normal;font-weight:600;src:url("#FontID0") format(svg)}
+    .fil1 {fill:#ED3237}
+    .fil0 {fill:#282829}
+    .fnt0 {font-weight:600;font-size:613.165px;font-family:'Fira Sans SemiBold'}
+   ]]>
+  </style>
+ </defs>
+ <g id="Layer_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <text x="8" y="474"  class="fil0 fnt0">UI</text>
+  <polygon class="fil0" points="8,530 589,530 589,558 8,558 "/>
+  <g transform="matrix(0.942957 0 0 1 -272.916 173.942)">
+   <text x="300" y="300"  class="fil1 fnt0">UI</text>
+  </g>
+ </g>
+</svg>

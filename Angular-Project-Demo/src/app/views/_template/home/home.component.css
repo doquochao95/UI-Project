@@ -1,0 +1,21 @@
+.header {
+    font-size: large;
+    padding: auto;
+    border: 5px;
+    color: blue;
+}
+
+.table,td,th {
+    border: 2px;
+    border-collapse: collapse;
+    border-style: groove;
+    border-color: black;
+    text-align: center;
+    column-width: 100px;
+}
+.junior {
+    background-color: burlywood;
+}
+.senior {
+    background-color:cadetblue;
+}

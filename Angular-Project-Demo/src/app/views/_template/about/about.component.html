@@ -1,0 +1,19 @@
+<div>
+  <p [appHighlight]="color" defaultHighlightColor="violet">about works!</p>
+  <ul [ngSwitch]="loginName">
+    <li *ngSwitchCase="'user'">
+      <p>User is loged in</p>
+    </li>
+    <li *ngSwitchCase="'admin'">
+      <p>Admin is loged in</p>
+      <app-home></app-home>
+    </li>
+    <li *ngSwitchCaseDefault>
+      <p>Pls choose login name</p>
+    </li>
+  </ul>
+  <input [(ngModel)]="counter">
+  <button (click)="counting()">Count</button>
+</div>
+
+

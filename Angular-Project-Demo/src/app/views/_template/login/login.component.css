@@ -1,0 +1,56 @@
+.app-login {
+  display: flex;
+  flex-direction: row;
+}
+.login-background {
+  width: 90%;
+  background-image: url("../../../../assets/img/background/loginBackground.jpg");
+  background-repeat: repeat;
+  background-size: cover;
+  height: 100vh;
+}
+.login-controls {
+  width: auto;
+  height: 100vh;
+  background-color: #fff;
+  max-width: 50;
+}
+.app-body {
+  flex-direction: row;
+  height: 100%;
+  align-items: center;
+  width: 45vh;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.login-title {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+img {
+  height: 6rem;
+  margin: 1rem 0 4rem 0;
+}
+
+span {
+  font-size: 3rem;
+  font-weight: lighter;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.login-footer {
+  text-align: center;
+}

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW X8 -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="1800px" height="600px" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 1800 600"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <font id="FontID1" horiz-adv-x="586" font-variant="normal" style="fill-rule:nonzero" font-style="normal" font-weight="600">
+	<font-face 
+		font-family="Fira Sans SemiBold">
+		<font-face-src>
+			<font-face-name name="Fira Sans SemiBold"/>
+		</font-face-src>
+	</font-face>
+   <missing-glyph><path d="M0 0z"/></missing-glyph>
+   <glyph unicode="U" horiz-adv-x="654" d="M590 692l-147.001 0 0 -456.999c0,-93 -35.9997,-139.001 -117,-139.001 -79.999,0 -115.999,46.0009 -115.999,139.001l0 456.999 -147.001 0 0 -464c0,-143.999 88.0003,-244 262.999,-244 175.001,0 264.001,105.001 264.001,244l0 464z"/>
+   <glyph unicode="I" horiz-adv-x="293" d="M220 692l-147.001 0 0 -692 147.001 0 0 692z"/>
+  </font>
+  <font id="FontID0" horiz-adv-x="576" font-variant="normal" style="fill-rule:nonzero" font-style="italic" font-weight="600">
+	<font-face 
+		font-family="Fira Sans SemiBold">
+		<font-face-src>
+			<font-face-name name="Fira Sans SemiBold Italic"/>
+		</font-face-src>
+	</font-face>
+   <missing-glyph><path d="M0 0z"/></missing-glyph>
+   <glyph unicode="t" horiz-adv-x="370" d="M243.001 429.998l106 0 28.9991 100.004 -121 0 17.9983 132.998 -118.999 -13.9991 -32.9982 -118.999 -83.8334 0 -13.0024 -100.004 76.8359 0 -36.8361 -261.996c-16.0008,-118.002 30.8353,-183.002 141.836,-184.003 44.9998,0 96.0004,13.0024 138.999,38.999l-37.9982 94.0029c-24.0032,-13.0024 -44.0031,-19.0032 -64.003,-19.0032 -33.999,0 -46.0006,17.0016 -38.999,69.003l37.0015 262.997z"/>
+   <glyph unicode="k" horiz-adv-x="560" d="M277.001 756.999l-141 -15.9966 -103.999 -741.002 139.999 0 44.9998 325.999c43.999,83.0021 97.0013,118.999 142.001,118.999 30.9966,0 47.9981,-15.9966 47.9981,-46.9973 0,-59.9998 -39.9998,-105 -158.999,-141l103.999 -257.001 153.999 0 -103.999 234.999c101,38.999 148.999,103.002 148.999,186 0,73.9989 -53.9989,124.999 -138.999,124.999 -64.9997,0 -124.999,-26.9974 -177.001,-91.0005l42.0015 302z"/>
+   <glyph unicode="T" horiz-adv-x="525" d="M584.001 691.999l-515.002 0 -16.0008 -115 181 0 -80.9964 -576.999 144.999 0 81.0005 576.999 172.998 0 32.0015 115z"/>
+   <glyph unicode="o" horiz-adv-x="575" d="M324.002 545.999c-219.002,0 -290.003,-193.998 -290.003,-337.997 0,-139.003 78.0022,-224.002 217.001,-224.002 218.998,0 289.999,196 289.999,338.001 1.00082,137.998 -77.998,223.998 -216.997,223.998zm-9.00327 -106c54.0031,0 82.0013,-32.9982 82.0013,-107.998 0,-86.0005 -24.9999,-242.001 -137.001,-242.001 -54.9998,0 -81.9972,33.0023 -81.9972,108.002 0,85.9963 23.9991,241.997 136.997,241.997z"/>
+   <glyph unicode="l" horiz-adv-x="288" d="M272.001 756.999l-141 -15.9966 -85.6655 -607.003c-13.0024,-97.9979 30.8311,-149.999 114.665,-149.999 32.0015,0 64.9997,7.00163 93.9988,18.9991l-18.9991 101c-9.99996,-3.99916 -19.9999,-6.99749 -27.9982,-6.99749 -18.0024,0 -26.0007,9.99996 -22.0016,37.9982l87.0013 621.999z"/>
+   <glyph unicode="i" horiz-adv-x="278" d="M211 802.999c-47.9981,0 -87.0013,-33.999 -92.998,-78.9988 -7.00163,-48.999 23.9991,-87.0013 75.9964,-87.0013 49.0031,0 87.0013,33.999 93.0021,79.003 6.99749,48.999 -23.0024,86.9972 -76.0005,86.9972zm34.9999 -272.997l-139.999 0 -73.9989 -530.002 139.999 0 73.9989 530.002z"/>
+  </font>
+  <style type="text/css">
+   <![CDATA[
+    @font-face { font-family:"Fira Sans SemiBold";font-variant:normal;font-style:normal;font-weight:600;src:url("#FontID1") format(svg)}
+    @font-face { font-family:"Fira Sans SemiBold";font-variant:normal;font-style:italic;font-weight:600;src:url("#FontID0") format(svg)}
+    .fil1 {fill:#ED3237}
+    .fil2 {fill:#282829}
+    .fil0 {fill:#282829}
+    .fnt1 {font-weight:600;font-size:689.802px;font-family:'Fira Sans SemiBold'}
+    .fnt0 {font-style:italic;font-weight:600;font-size:285.592px;font-family:'Fira Sans SemiBold'}
+   ]]>
+  </style>
+ </defs>
+ <g id="Layer_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <text x="808" y="581"  class="fil0 fnt0">Tool</text>
+  <text x="1346" y="581"  class="fil1 fnt0">kit</text>
+  <text x="65" y="490"  class="fil2 fnt1">UI</text>
+  <polygon class="fil2" points="65,553 719,553 719,584 65,584 "/>
+  <g transform="matrix(0.942957 0 0 1 -780.684 190.346)">
+   <text x="900" y="300"  class="fil1 fnt1">UI</text>
+  </g>
+ </g>
+</svg>

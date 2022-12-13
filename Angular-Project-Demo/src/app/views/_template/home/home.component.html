@@ -1,0 +1,61 @@
+<div class="header">
+  <h3>Come home</h3>
+  <br />
+  <input type="text" [(ngModel)]="name" />
+  <input type="number" [(ngModel)]="age" />
+  <br />
+  <h2>{{ name }}</h2>
+  <div *ngIf="age <= standardage; then thenblock; else elseblock"></div>
+  <ng-template #thenblock>
+    <h2>{{ age }} Junior</h2>
+  </ng-template>
+  <ng-template #elseblock>
+    <h2>{{ age }} Senior</h2>
+  </ng-template>
+  <button (click)="reset_name_age()">Reset</button>
+  <br />
+  <h1>Class Member</h1>
+  <div *ngFor="let mem of student">
+    <li>{{ mem.name }} {{ mem.age }}</li>
+  </div>
+  <br />
+  <div>
+    <table class="table">
+      <tr>
+        <th>No</th>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Status</th>
+        <th>Finished</th>
+        <th>Cash</th>
+      </tr>
+      <tr
+        *ngFor="let mem of student; let i = index"
+        [ngClass]="{ junior: mem.age < 18, senior: mem.age >= 18 }"
+      >
+        <td>{{ i + 1 }}</td>
+        <td>{{ mem.name | uppercase }}</td>
+        <td>{{ mem.age }}</td>
+        <td>
+          <div *ngIf="mem.age < 18; then thenblo; else elseblo"></div>
+          <ng-template #thenblo>Junior</ng-template>
+          <ng-template #elseblo>Senior</ng-template>
+        </td>
+        <td>
+          <span *ngIf="mem.still === true; then thenbloc; else elsebloc"></span>
+          <ng-template #thenbloc>Still</ng-template>
+          <ng-template #elsebloc>Done</ng-template>
+        </td>
+        <td>{{ mem.cash | currency: "USD" }}</td>
+      </tr>
+    </table>
+  </div>
+  Class :
+  <select name="school" id="school" (change)="changeSchool($event)">
+    <option *ngFor="let school of schools">{{ school.class }}</option>
+  </select>
+  Student :
+  <select name="student" id="student">
+    <option *ngFor="let student of students">{{ student }}</option>
+  </select>
+</div>

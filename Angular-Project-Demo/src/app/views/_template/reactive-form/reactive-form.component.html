@@ -1,0 +1,41 @@
+<p>reactive-form works!</p>
+<form [formGroup]="formData" (ngSubmit)="submitData()">
+  FormGroup
+  <div>
+    <label for="firstname"> First Name : </label>
+    <input name="firstname" type="text" formControlName="firstname" />
+  </div>
+  <div>
+    <label for="lastname"> Last Name : </label>
+    <input name="lastname" type="text" formControlName="lastname" />
+  </div>
+  <button>Submit</button>
+</form>
+<br />
+<form [formGroup]="formData2" (ngSubmit)="submitData2()">
+  FormBuilder
+  <div>
+    <label for="firstname"> First Name : </label>
+    <input name="firstname" type="text" formControlName="firstname" />
+  </div>
+  <div>
+    <label for="lastname"> Last Name : </label>
+    <input name="lastname" type="text" formControlName="lastname" />
+  </div>
+  <button>Submit</button>
+</form>
+<br />
+<form [formGroup]="formData3" (ngSubmit)="submitData3()">
+  FormBuilder + Validator
+  <div>
+    <label for="firstname"> First Name : </label>
+    <input name="firstname" type="text" formControlName="firstname" />
+    <sub *ngIf="!formData3.controls.firstname.valid" style="color: red"> Required</sub>
+  </div>
+  <div>
+    <label for="lastname"> Last Name : </label>
+    <input name="lastname" type="text" formControlName="lastname" />
+    <sub *ngIf="!formData3.controls.lastname.valid" style="color: red"> Required</sub>
+  </div>
+  <button [disabled]="!formData3.valid">Submit</button>
+</form>
