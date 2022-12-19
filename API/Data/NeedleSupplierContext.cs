@@ -52,6 +52,9 @@ public partial class NeedleSupplierContext : DbContext
 
     public virtual DbSet<RoleUser> RoleUsers { get; set; }
 
+    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        => optionsBuilder.UseSqlServer("Name=ConnectionStrings:Local_DefaultConnection");
+
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.Entity<LogEvent>(entity =>

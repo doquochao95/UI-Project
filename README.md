@@ -107,8 +107,10 @@ builder.Services.AddAuthentication().AddJwtBearer((options) => {
 
 # Angular UI
 
-- Create module, routing and component without test file
-  `ng g m my-page --routing=true && ng g c my-page --skip-tests=true -m=my-page`
+- Create module with routing
+  `ng g m module-name --routing`
+- Create component without test file 
+  `ng g c my-page --skip-tests=true -m=my-module`
 
 ## Getting Started
 
@@ -194,3 +196,6 @@ ngOnInit() {
 declare module "@coreui/coreui-plugin-chartjs-custom-tooltips";
 declare module "@coreui/coreui/dist/js/coreui-utilities";
 ```
+
+7. Code Mirror
+   `yanr add @ctrl/ngx-codemirror@5.1.1 codemirror@5`

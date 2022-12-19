@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\hao.do\\Desktop\\First-Angular-Project\\API\\API.csproj": {}
+    "C:\\Users\\hao.do.SSB\\UI-Project\\API\\API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\hao.do\\Desktop\\First-Angular-Project\\API\\API.csproj": {
+    "C:\\Users\\hao.do.SSB\\UI-Project\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\hao.do\\Desktop\\First-Angular-Project\\API\\API.csproj",
+        "projectUniqueName": "C:\\Users\\hao.do.SSB\\UI-Project\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "C:\\Users\\hao.do\\Desktop\\First-Angular-Project\\API\\API.csproj",
-        "packagesPath": "C:\\Users\\hao.do\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\hao.do\\Desktop\\First-Angular-Project\\API\\obj\\",
+        "projectPath": "C:\\Users\\hao.do.SSB\\UI-Project\\API\\API.csproj",
+        "packagesPath": "C:\\Users\\hao.do.SSB\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\hao.do.SSB\\UI-Project\\API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\hao.do\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\hao.do.SSB\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
