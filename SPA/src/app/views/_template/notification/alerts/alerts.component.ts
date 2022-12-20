@@ -1,12 +1,15 @@
+import { codemirror } from './../../../../core/model/code-mirror.model';
 import {
   Component,
   OnInit,
   SecurityContext,
+  Type,
   VERSION,
   ViewEncapsulation,
 } from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser';
 import { AlertConfig } from 'ngx-bootstrap/alert';
+import { type } from 'os';
 import {
   ComponentCode,
   TemplateCode,
@@ -18,7 +21,9 @@ import { CodeMirrorService } from 'src/app/core/service/codemirror.service';
 export function getAlertConfig(): AlertConfig {
   return Object.assign(new AlertConfig(), { type: 'success' });
 }
-
+type alertcodes = {
+  [name: string]: codemirror;
+};
 @Component({
   selector: 'app-alerts',
   templateUrl: './alerts.component.html',
@@ -27,12 +32,16 @@ export function getAlertConfig(): AlertConfig {
 })
 export class AlertsComponent implements OnInit {
   name = 'Angular ' + VERSION.major;
-  codeMirrorOptions: any = this.codemirroService.codeMirrorOptions;
-
+  codeMirrorHTMLOptions: any = this.codemirroService.codeMirrorHTMLOptions;
+  codeMirrorTSOptions: any = this.codemirroService.codeMirrorTSOptions;
   templateBase: string = ``;
   componentBase: string = ``;
   template: string = ``;
   component: string = ``;
+  codemirrors: alertcodes = {};
+  selectedTabIndexBase: number = 0;
+  selectedTabIndexLink: number = 0;
+
   constructor(
     private codemirroService: CodeMirrorService,
     sanitizer: DomSanitizer
@@ -94,8 +103,67 @@ export class AlertsComponent implements OnInit {
     });
   }
   ngOnInit(): void {
-    this.templateBase = TemplateCode.ALERT_BASE;
-    this.componentBase = ComponentCode.ALERT_BASE;
+    let code: codemirror = {
+      tabIndex: 0,
+      template: TemplateCode.ALERT_BASE,
+      component: ComponentCode.ALERT_BASE,
+    };
+    this.codemirrors['Base'] = code
+    code = {
+      tabIndex: 0,
+      template: TemplateCode.ALERT_LINK_COLOR,
+      component: ComponentCode.ALERT_LINK_COLOR,
+    };
+    this.codemirrors['Link'] = code;
+    code = {
+      tabIndex: 0,
+      template: TemplateCode.ALERT_CONTENT,
+      component: ComponentCode.ALERT_CONTENT,
+    };
+    this.codemirrors['Content'] = code;
+    code = {
+      tabIndex: 0,
+      template: TemplateCode.ALERT_DISMISSING,
+      component: ComponentCode.ALERT_DISMISSING,
+    };
+    this.codemirrors['Dismissing'] = code;
+    code = {
+      tabIndex: 0,
+      template: TemplateCode.ALERT_DISMISS_TIMEOUT,
+      component: ComponentCode.ALERT_DISMISS_TIMEOUT,
+    };
+    this.codemirrors['Timeout'] = code;
+    code = {
+      tabIndex: 0,
+      template: TemplateCode.ALERT_DYNAMIC_CONTENT,
+      component: ComponentCode.ALERT_DYNAMIC_CONTENT,
+    };
+    this.codemirrors['Dynamic-Content'] = code;
+    code = {
+      tabIndex: 0,
+      template: TemplateCode.ALERT_DYNAMIC_HTML,
+      component: ComponentCode.ALERT_DYNAMIC_HTML,
+    };
+    this.codemirrors['Dynamic-HTML'] = code;
+    code = {
+      tabIndex: 0,
+      template: TemplateCode.ALERT_GLOBAL_STYLING,
+      component: ComponentCode.ALERT_GLOBAL_STYLING,
+    };
+    this.codemirrors['Global'] = code;
+    code = {
+      tabIndex: 0,
+      template: TemplateCode.ALERT_COMPONENT_STYLING,
+      component: ComponentCode.ALERT_COMPONENT_STYLING,
+    };
+    this.codemirrors['Component'] = code;
+    code = {
+      tabIndex: 0,
+      template: TemplateCode.ALERT_CONFIGURING_DEFAULT,
+      component: ComponentCode.ALERT_CONFIGURING_DEFAULT,
+    };
+    this.codemirrors['Default'] = code;
+    console.log(this.codemirrors);
   }
   setEditorTemplate(event: any) {
     console.log(this.templateBase);

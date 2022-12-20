@@ -1,5 +1,8 @@
 import { Component, OnInit, VERSION } from '@angular/core';
-import { ComponentCode, TemplateCode } from 'src/app/core/helpers/enums/code-miror.enum';
+import {
+  ComponentCode,
+  TemplateCode,
+} from 'src/app/core/helpers/enums/code-miror.enum';
 import { CodeMirrorService } from 'src/app/core/service/codemirror.service';
 
 @Component({
@@ -9,9 +12,11 @@ import { CodeMirrorService } from 'src/app/core/service/codemirror.service';
 })
 export class SingleLineIconsComponent implements OnInit {
   name = 'Angular ' + VERSION.major;
-  codeMirrorOptions: any = this.codemirroService.codeMirrorOptions;
+  codeMirrorHTMLOptions: any = this.codemirroService.codeMirrorHTMLOptions;
+  codeMirrorTSOptions: any = this.codemirroService.codeMirrorTSOptions;
   template: string = ``;
   component: string = ``;
+  selectedTabIndex: number = 0;
 
   constructor(private codemirroService: CodeMirrorService) {}
   ngOnInit() {

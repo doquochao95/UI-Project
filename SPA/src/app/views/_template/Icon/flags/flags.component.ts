@@ -9,9 +9,11 @@ import { CodeMirrorService } from 'src/app/core/service/codemirror.service';
 })
 export class FlagsComponent implements OnInit {
   name = 'Angular ' + VERSION.major;
-  codeMirrorOptions: any = this.codemirroService.codeMirrorOptions;
+  codeMirrorHTMLOptions: any = this.codemirroService.codeMirrorHTMLOptions;
+  codeMirrorTSOptions: any = this.codemirroService.codeMirrorTSOptions;
   template: string = ``;
   component: string = ``;
+  selectedTabIndex : number = 0;
 
   constructor(private codemirroService: CodeMirrorService) {}
   ngOnInit() {

@@ -109,7 +109,7 @@ builder.Services.AddAuthentication().AddJwtBearer((options) => {
 
 - Create module with routing
   `ng g m module-name --routing`
-- Create component without test file 
+- Create component without test file
   `ng g c my-page --skip-tests=true -m=my-module`
 
 ## Getting Started
@@ -199,3 +199,36 @@ declare module "@coreui/coreui/dist/js/coreui-utilities";
 
 7. Code Mirror
    `yanr add @ctrl/ngx-codemirror@5.1.1 codemirror@5`
+
+- Add to styles.css
+
+```typescript
+  @import '~codemirror/lib/codemirror.css';
+  @import '~codemirror/addon/lint/lint.css';
+  @import '~codemirror/addon/hint/show-hint.css';
+  @import "~codemirror/theme/material.css";
+  @import "~codemirror/theme/shadowfox.css";
+```
+
+- Add to main.ts
+
+```typescript
+  import "codemirror/lib/codemirror";
+  import "codemirror/mode/sql/sql";
+  import "codemirror/mode/javascript/javascript";
+  import "codemirror/mode/htmlmixed/htmlmixed";
+  import "codemirror/addon/edit/matchbrackets";
+  import "codemirror/addon/hint/show-hint";
+  import "codemirror/addon/hint/sql-hint";
+```
+
+8. Add Material
+
+- Add package
+  `yarn add @angular/material@14.2.7`
+
+- Add style to styles.css
+
+```typescript
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+```

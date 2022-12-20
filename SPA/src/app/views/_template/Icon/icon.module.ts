@@ -1,3 +1,4 @@
+import { MatTabsModule } from '@angular/material/tabs';
 import { SingleLineIconsComponent } from './single-line-icons/single-line-icons.component';
 import { FontsComponent } from './fonts/fonts.component';
 import { FlagsComponent } from './flags/flags.component';
@@ -7,7 +8,6 @@ import { CommonModule } from '@angular/common';
 
 import { FormsModule } from '@angular/forms';
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
-
 import { TabsModule } from 'ngx-bootstrap/tabs';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { CollapseModule } from 'ngx-bootstrap/collapse';
@@ -30,9 +30,9 @@ import { CodemirrorModule } from '@ctrl/ngx-codemirror';
     CommonModule,
     IconRoutingModule,
     FormsModule,
+    MatTabsModule,
     CodemirrorModule,
     BsDropdownModule.forRoot(),
-    TabsModule,
     CarouselModule.forRoot(),
     CollapseModule.forRoot(),
     PaginationModule.forRoot(),

@@ -6,26 +6,58 @@
         <i class="cil-account-logout icons font-2xl d-block mt-3"></i>
         <div class="mb-3">account-logout</div>
       </div>
-      <tabset #staticTabs>
-        <tab heading="Template">
-          <ngx-codemirror
-            #codemirror
-            [options]="codeMirrorOptions"
-            [(ngModel)]="template"
-            (ngModelChange)="setEditorTemplate($event)"
-          >
-          </ngx-codemirror>
+      <mat-tab-group [(selectedIndex)]="selectedTabIndex" mat-stretch-tabs class="example-stretched-tabs mat-elevation-z4">
+        <mat-tab label=".HTML">
+          <ng-template matTabContent>
+            <div>
+              <ngx-codemirror
+                #codemirror
+                [options]="codeMirrorHTMLOptions"
+                [(ngModel)]="template"
+                (ngModelChange)="setEditorTemplate($event)"
+              >
+              </ngx-codemirror>
+            </div>
+          </ng-template>
+        </mat-tab>
+        <mat-tab label=".TS">
+          <ng-template matTabContent>
+            <div>
+              <ngx-codemirror
+                #codemirror
+                [options]="codeMirrorTSOptions"
+                [(ngModel)]="component"
+                (ngModelChange)="setEditorTemplate($event)"
+              >
+              </ngx-codemirror>
+            </div>
+          </ng-template>
+        </mat-tab>
+      </mat-tab-group>
+      <!-- <tabset [(selectedIndex)]="selectedTabIndex" [justified]="true">
+        <tab heading="Template" (selectTab)="onSelect($event)">
+          <div>
+            <ngx-codemirror
+              #codemirror
+              [options]="codeMirrorOptions"
+              [(ngModel)]="template"
+              (ngModelChange)="setEditorTemplate($event)"
+            >
+            </ngx-codemirror>
+          </div>
         </tab>
-        <tab heading="Component"
-          ><ngx-codemirror
-            #codemirror
-            [options]="codeMirrorOptions"
-            [(ngModel)]="component"
-            (ngModelChange)="setEditorComponent($event)"
-          >
-          </ngx-codemirror
-        ></tab>
-      </tabset>
+        <tab heading="Component" (selectTab)="onSelect($event)">
+          <div>
+            <ngx-codemirror
+              #codemirror
+              [options]="codeMirrorOptions"
+              [(ngModel)]="component"
+              (ngModelChange)="setEditorComponent($event)"
+            >
+            </ngx-codemirror>
+          </div>
+        </tab>
+      </tabset> -->
     </div>
   </div>
   <div class="card card-default">

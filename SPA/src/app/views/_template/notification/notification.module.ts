@@ -16,7 +16,7 @@ import { TooltipModule } from 'ngx-bootstrap/tooltip';
 import { ProgressbarModule } from 'ngx-bootstrap/progressbar';
 import { PopoverModule } from 'ngx-bootstrap/popover';
 import { PaginationModule } from 'ngx-bootstrap/pagination';
-
+import {MatTabsModule} from '@angular/material/tabs';
 @NgModule({
   declarations: [AlertsComponent, BadgesComponent, ModalsComponent],
   imports: [
@@ -26,6 +26,7 @@ import { PaginationModule } from 'ngx-bootstrap/pagination';
 
     AlertModule.forRoot(),
     ModalModule.forRoot(),
+   MatTabsModule,
 
     CommonModule,
     FormsModule,

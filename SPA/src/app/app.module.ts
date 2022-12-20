@@ -42,7 +42,7 @@ import {
   AppFooterModule,
   AppSidebarModule,
 } from '@coreui/angular';
-
+import {MatTabsModule} from '@angular/material/tabs'
 
 export function GetToken() {
   return localStorage.getItem(LocalStorageConstants.TOKEN);
@@ -81,6 +81,7 @@ const APP_CONTAINERS = [DefaultLayoutComponent];
     AppHeaderModule,
     AppSidebarModule,
     ChartsModule,
+    MatTabsModule,
     ReactiveFormsModule.withConfig({ warnOnNgModelWithFormControl: 'never' }),
     HttpClientModule,
     NgxSpinnerModule,

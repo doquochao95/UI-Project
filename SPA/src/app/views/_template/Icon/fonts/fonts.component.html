@@ -6,26 +6,34 @@
         <i class="fa fa-address-book fa-lg mt-3"></i><br />
         <div class="mb-2">address-book</div>
       </div>
-      <tabset #staticTabs>
-        <tab heading="Template">
-          <ngx-codemirror
-            #codemirror
-            [options]="codeMirrorOptions"
-            [(ngModel)]="template"
-            (ngModelChange)="setEditorTemplate($event)"
-          >
-          </ngx-codemirror>
-        </tab>
-        <tab heading="Component"
-          ><ngx-codemirror
-            #codemirror
-            [options]="codeMirrorOptions"
-            [(ngModel)]="component"
-            (ngModelChange)="setEditorComponent($event)"
-          >
-          </ngx-codemirror
-        ></tab>
-      </tabset>
+      <mat-tab-group [(selectedIndex)]="selectedTabIndex" mat-stretch-tabs class="example-stretched-tabs mat-elevation-z4">
+        <mat-tab label=".HTML">
+          <ng-template matTabContent>
+            <div>
+              <ngx-codemirror
+                #codemirror
+                [options]="codeMirrorHTMLOptions"
+                [(ngModel)]="template"
+                (ngModelChange)="setEditorTemplate($event)"
+              >
+              </ngx-codemirror>
+            </div>
+          </ng-template>
+        </mat-tab>
+        <mat-tab label=".TS">
+          <ng-template matTabContent>
+            <div>
+              <ngx-codemirror
+                #codemirror
+                [options]="codeMirrorTSOptions"
+                [(ngModel)]="component"
+                (ngModelChange)="setEditorTemplate($event)"
+              >
+              </ngx-codemirror>
+            </div>
+          </ng-template>
+        </mat-tab>
+      </mat-tab-group>
     </div>
   </div>
   <div class="card" id="new47">

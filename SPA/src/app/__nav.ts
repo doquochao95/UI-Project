@@ -197,7 +197,7 @@ export class Nav {
             icon: 'icon-bell',
           },
           {
-            name: 'Modals',
+            name: 'Modals (Popup)',
             url: '/notification/modals',
             icon: 'icon-bell',
           },

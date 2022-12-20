@@ -4,6 +4,7 @@ import {
   TemplateCode,
   ComponentCode,
 } from 'src/app/core/helpers/enums/code-miror.enum';
+import { TabDirective } from 'ngx-bootstrap/tabs';
 @Component({
   selector: 'app-coreui-icons',
   templateUrl: './coreui-icons.component.html',
@@ -11,10 +12,12 @@ import {
 })
 export class CoreuiIconsComponent implements OnInit {
   name = 'Angular ' + VERSION.major;
-  codeMirrorOptions: any = this.codemirroService.codeMirrorOptions;
+  codeMirrorHTMLOptions: any = this.codemirroService.codeMirrorHTMLOptions;
+  codeMirrorTSOptions: any = this.codemirroService.codeMirrorTSOptions;
+
   template: string = ``;
   component: string = ``;
-
+  selectedTabIndex : number = 0;
   constructor(private codemirroService: CodeMirrorService) {}
   ngOnInit() {
     this.template = TemplateCode.COREUI_ICON;
@@ -25,5 +28,9 @@ export class CoreuiIconsComponent implements OnInit {
   }
   setEditorComponent(event: any) {
     console.log(this.component);
+  }
+  value?: string;
+  onSelect(data: TabDirective): void {
+    this.value = data.heading;
   }
 }
