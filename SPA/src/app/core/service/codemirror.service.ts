@@ -18,6 +18,8 @@ export class CodeMirrorService {
       matchBrackets: true,
       lint: true,
       readOnly: true,
+      autoRefresh:true,
+      autoFocus: true
     };
     this.codeMirrorTSOptions = {
       mode: 'application/typescript',
@@ -32,6 +34,8 @@ export class CodeMirrorService {
       matchBrackets: true,
       lint: true,
       readOnly: true,
+      autoRefresh:true,
+      autoFocus: true
     };
   }
 }

@@ -1,6 +1,9 @@
 <div class="animated fadeIn">
   <div class="row">
     <div class="col-sm-6 col-lg-3">
+      <div class="text-right">
+        <button class="btn btn-link" (click)="gridModal.show()">docs</button>
+      </div>
       <div class="card text-white bg-info">
         <div class="card-body pb-0">
           <button type="button" class="btn btn-transparent p-0 float-right">
@@ -21,6 +24,9 @@
       </div>
     </div><!--/.col-->
     <div class="col-sm-6 col-lg-3">
+      <div class="text-right">
+        <button class="btn btn-link">docs</button>
+      </div>
       <div class="card text-white bg-primary">
         <div class="card-body pb-0">
           <div class="btn-group float-right" dropdown>
@@ -49,6 +55,9 @@
       </div>
     </div><!--/.col-->
     <div class="col-sm-6 col-lg-3">
+      <div class="text-right">
+        <button class="btn btn-link">docs</button>
+      </div>
       <div class="card text-white bg-warning">
         <div class="card-body pb-0">
           <div class="btn-group float-right" dropdown>
@@ -76,6 +85,9 @@
       </div>
     </div><!--/.col-->
     <div class="col-sm-6 col-lg-3">
+      <div class="text-right">
+        <button class="btn btn-link">docs</button>
+      </div>
       <div class="card text-white bg-danger">
         <div class="card-body pb-0">
           <div class="btn-group float-right" dropdown>
@@ -746,4 +758,69 @@
       </div>
     </div><!--/.col-->
   </div><!--/.row-->
+</div>
+<div
+  bsModal
+  #gridModal="bs-modal"
+  class="modal fade"
+  id="tooltippopoverModal"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="tooltippopoverModalTitle"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+        <button
+          type="button"
+          (click)="gridModal.hide()"
+          class="close"
+          data-dismiss="modal"
+          aria-label="Close"
+        >
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <mat-tab-group
+            [(selectedIndex)]="selectedTabIndex"
+            mat-stretch-tabs
+            class="example-stretched-tabs mat-elevation-z4"
+          >
+            <mat-tab label=".HTML">
+              <ng-template matTabContent>
+                  <ngx-codemirror
+                    #codeMirror
+                    [options]="codeMirrorHTMLOptions"
+                    [(ngModel)]="template"
+                  >
+                  </ngx-codemirror>
+              </ng-template>
+            </mat-tab>
+            <mat-tab label=".TS">
+              <ng-template matTabContent>
+                  <ngx-codemirror
+                    #codeEditorCmp
+                    [options]="codeMirrorTSOptions"
+                    [(ngModel)]="component"
+                  >
+                  </ngx-codemirror>
+              </ng-template>
+            </mat-tab>
+          </mat-tab-group>
+        </div>
+      <div class="modal-footer">
+        <button
+          type="button"
+          class="btn btn-secondary"
+          data-dismiss="modal"
+          (click)="gridModal.hide()"
+        >
+          Close
+        </button>
+      </div>
+    </div>
+  </div>
 </div>

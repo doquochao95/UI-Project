@@ -42,7 +42,14 @@ import {
   AppFooterModule,
   AppSidebarModule,
 } from '@coreui/angular';
-import {MatTabsModule} from '@angular/material/tabs'
+import { MatTabsModule } from '@angular/material/tabs';
+import { AlertModule } from 'ngx-bootstrap/alert';
+import { ModalModule } from 'ngx-bootstrap/modal';
+import { CarouselModule } from 'ngx-bootstrap/carousel';
+import { PaginationModule } from 'ngx-bootstrap/pagination';
+import { ProgressbarModule } from 'ngx-bootstrap/progressbar';
+import { PopoverModule } from 'ngx-bootstrap/popover';
+import { TooltipModule } from 'ngx-bootstrap/tooltip';
 
 export function GetToken() {
   return localStorage.getItem(LocalStorageConstants.TOKEN);
@@ -66,7 +73,6 @@ const APP_CONTAINERS = [DefaultLayoutComponent];
     TypographyComponent,
     WidgetComponent,
     ...APP_CONTAINERS,
-
   ],
   imports: [
     FormsModule,
@@ -98,6 +104,18 @@ const APP_CONTAINERS = [DefaultLayoutComponent];
         disallowedRoutes: environment.disallowedRoutes,
       },
     }),
+
+    AlertModule.forRoot(),
+    ModalModule.forRoot(),
+    MatTabsModule,
+    CommonModule,
+    FormsModule,
+    TabsModule,
+    CarouselModule.forRoot(),
+    PaginationModule.forRoot(),
+    PopoverModule.forRoot(),
+    ProgressbarModule.forRoot(),
+    TooltipModule.forRoot(),
   ],
   providers: [
     IconSetService,
